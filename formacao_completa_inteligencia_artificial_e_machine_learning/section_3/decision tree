@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ThisCarDam <= 2.5\ngini = 0.452\nsamples = 14000\nvalue = [1196, 1099, 10108, 1597]\nclass = y[2]", fillcolor="#77bced"] ;
+1 [label="ThisCarDam <= 1.5\ngini = 0.652\nsamples = 3669\nvalue = [998, 1088, 0, 1583]\nclass = y[3]", fillcolor="#f7d9fa"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+3 [label="ThisCarDam <= 0.5\ngini = 0.543\nsamples = 1961\nvalue = [997, 869, 0, 95]\nclass = y[0]", fillcolor="#fcf0e8"] ;
+1 -> 3 ;
+5 [label="RuggedAuto <= 1.5\ngini = 0.293\nsamples = 1100\nvalue = [913.0, 140.0, 0.0, 47.0]\nclass = y[0]", fillcolor="#ea9a60"] ;
+3 -> 5 ;
+7 [label="gini = 0.054\nsamples = 870\nvalue = [846, 24, 0, 0]\nclass = y[0]", fillcolor="#e6853f"] ;
+5 -> 7 ;
+8 [label="gini = 0.619\nsamples = 230\nvalue = [67, 116, 0, 47]\nclass = y[1]", fillcolor="#c8f7c3"] ;
+5 -> 8 ;
+6 [label="RuggedAuto <= 1.5\ngini = 0.27\nsamples = 861\nvalue = [84, 729, 0, 48]\nclass = y[1]", fillcolor="#66e95b"] ;
+3 -> 6 ;
+13 [label="gini = 0.196\nsamples = 769\nvalue = [80, 685, 0, 4]\nclass = y[1]", fillcolor="#5de851"] ;
+6 -> 13 ;
+14 [label="gini = 0.541\nsamples = 92\nvalue = [4, 44, 0, 44]\nclass = y[1]", fillcolor="#ffffff"] ;
+6 -> 14 ;
+4 [label="PropCost <= 1.5\ngini = 0.225\nsamples = 1708\nvalue = [1, 219, 0, 1488]\nclass = y[3]", fillcolor="#dd56e9"] ;
+1 -> 4 ;
+9 [label="gini = 0.132\nsamples = 1370\nvalue = [0, 97, 0, 1273]\nclass = y[3]", fillcolor="#da48e7"] ;
+4 -> 9 ;
+10 [label="gini = 0.465\nsamples = 338\nvalue = [1, 122, 0, 215]\nclass = y[3]", fillcolor="#eeaaf4"] ;
+4 -> 10 ;
+2 [label="PropCost <= 1.5\ngini = 0.042\nsamples = 10331\nvalue = [198, 11, 10108, 14]\nclass = y[2]", fillcolor="#3d9fe6"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="gini = 0.609\nsamples = 27\nvalue = [5, 8, 0, 14]\nclass = y[3]", fillcolor="#f2c0f7"] ;
+2 -> 11 ;
+12 [label="gini = 0.037\nsamples = 10304\nvalue = [193, 3, 10108, 0]\nclass = y[2]", fillcolor="#3d9fe6"] ;
+2 -> 12 ;
+}
